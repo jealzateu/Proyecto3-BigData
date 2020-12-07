@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="titulo">
+    <h1>Contagiados covid-19 Colombia</h1>
+    <h2>Gráficas</h2>
+  </div>
+
+  <hr>
+
+  <div align="center" class="graficas">
+    <div>
+      <p><b>Departamentos con mayor número de muertes</b></p>
+      <img src="{{imagenes[0]}}" width="950">
+    </div>
+    <div class="gr">
+      <p><b>Población vulnerable</b></p>
+      <img src="{{imagenes[1]}}" width="950">
+    </div>
+    <div class="gr">
+      <p><b>Muertes por género en las ciudades principales</b></p>
+      <img src="{{imagenes[2]}}" width="700">
+    </div>
+    <div class="gr">
+      <p><b>Muertes de extranjeros</b></p>
+      <img src="{{imagenes[3]}}" width="950">
+    </div>
+  </div>
+
+  <div class="menu">
+    <ul id=”button” *ngFor="let f of fechas; let i = index">
+      <li><button (click)="calcular(i)">0{{f}}-2020</button></li>
+    </ul>
+  </div>
+
+</div>
