@@ -1,0 +1,1 @@
+ [{"classification":"spark-env", "properties":{}, "configurations":[{"classification":"export", "properties":{"PYSPARK_PYTHON":"python3"}, "configurations":[]}]}]
